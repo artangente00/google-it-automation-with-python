@@ -76,12 +76,11 @@ print(group_list("Users", "")) # Should be "Users:"
 """
 The skip_elements function returns every other element from the list, starting from the first. Complete this function to do that.
 """
-def skip_elements(elements):
-    new_elements = []
-    for element in elements:
-        if elements.index(element) % 2 == 0:
-            new_elements.append(element)
-    return new_elements
+def skip_elements(x):
+	new_list = []
+	for i in range(0,len(x),2):
+		new_list.append(x[i])
+	return new_list
 
 print(skip_elements(["a", "b", "c", "d", "e", "f", "g"])) # Should be ['a', 'c', 'e', 'g']
 print(skip_elements(['Orange', 'Pineapple', 'Strawberry', 'Kiwi', 'Peach'])) # Should be ['Orange', 'Strawberry', 'Peach']
